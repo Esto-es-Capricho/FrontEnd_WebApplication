@@ -1,0 +1,109 @@
+:host {
+  display: flex;
+  justify-content: center;
+  /* Añade un margen en la parte superior para evitar la colisión con otros componentes */
+  margin-top: 20px;
+}
+
+.card-info{
+  color: white;
+}
+
+mat-card {
+  width: 800px;
+  padding: 20px;
+}
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-header img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.edit-image {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.card-info h2, .card-info h3 {
+  margin: 0;
+  padding: 0;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+mat-form-field {
+  margin-bottom: 16px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  align-self: flex-end;
+  margin-top: 16px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #303f9f;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+label {
+  font-size: 1.2em;
+  color: #303f9f;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 800px) {
+  :host {
+    height: auto;
+    padding: 20px;
+  }
+
+  mat-card {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .card-header img {
+    width: 50%;
+  }
+
+  button {
+    font-size: 0.8em;
+    padding: 8px 16px;
+  }
+}

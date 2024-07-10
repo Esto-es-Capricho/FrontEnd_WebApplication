@@ -1,0 +1,46 @@
+{
+  "sellers": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "name": "John",
+      "lastname": "Doe",
+      "image_profile": "https://example.com/images/john_doe.png"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "johndoe",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "username": "janesmith",
+      "password": "password456"
+    }
+  ],
+  "consumers": [
+    {
+      "id": "1",
+      "user_id": 2,
+      "name": "Maria",
+      "lastname": "Johnson",
+      "image_profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRG1WxVcFjBUn9nB1zgLfr-tYL29QFd7F7tjlb38Uyg&s"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "title": "Payment Reminder",
+      "message": "Your payment is due in 3 days."
+    },
+    {
+      "id": "2",
+      "user_id": 2,
+      "title": "New Message",
+      "message": "You have a new message from John."
+    }
+  ]
+}

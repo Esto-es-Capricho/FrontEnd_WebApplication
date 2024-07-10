@@ -1,0 +1,23 @@
+<mat-card class="mat-elevation-z8 consumer-card" *ngIf="consumer">
+  <div class="card-header">
+    <img mat-card-image [src]="consumer.image_profile" alt="Photo of {{consumer.name}}">
+    <div *ngIf="editMode" class="edit-image">
+      <mat-icon (click)="onEditImage()">edit</mat-icon>
+    </div>
+    <h3 mat-card-subtitle>ID del Consumidor: {{consumer.id}}</h3>
+    <form #consumerForm="ngForm" (ngSubmit)="onSubmit(consumerForm)">
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput [(ngModel)]="consumerSchema.name" name="name" [readonly]="!editMode" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Apellido</mat-label>
+        <input matInput [(ngModel)]="consumerSchema.lastname" name="lastname" [readonly]="!editMode" required>
+      </mat-form-field>
+      <button *ngIf="editMode" type="submit" mat-raised-button color="primary">{{'GUARDAR'}}</button>
+    </form>
+  </div>
+  <mat-card-actions align="start">
+    <button mat-raised-button color="primary" (click)="editMode = !editMode">{{editMode ? 'CANCELAR' : 'EDITAR'}}</button>
+  </mat-card-actions>
+</mat-card>

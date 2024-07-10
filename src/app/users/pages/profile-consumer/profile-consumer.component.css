@@ -1,0 +1,34 @@
+.consumer-card {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-header img {
+  border-radius: 50%;
+  margin-right: 16px;
+  width: 80px;
+  height: 80px;
+}
+
+.card-info h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.card-info h3 {
+  margin: 0;
+  color: gray;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 8px;
+}

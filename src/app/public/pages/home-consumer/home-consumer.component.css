@@ -1,0 +1,39 @@
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #f0f0f0; /* Color de fondo del contenedor */
+  border-radius: 8px; /* Bordes redondeados para el contenedor */
+}
+
+.notification-card {
+  margin-bottom: 1.5rem;
+  background-color: #ffffff; /* Color de fondo de la tarjeta de notificación */
+  color: #333333; /* Color del texto de la tarjeta de notificación */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidad a la tarjeta */
+  border-radius: 8px; /* Bordes redondeados para la tarjeta */
+}
+
+/* Color del botón de eliminar cuando no se pasa el mouse por encima */
+button.mat-mini-fab {
+  background-color: #ff6347;
+  color: #ffffff;
+}
+
+/* Color del botón de eliminar cuando se pasa el mouse por encima */
+button.mat-mini-fab:hover {
+  background-color: #ff4500;
+  color: #ffffff;
+}
+
+.empty-notifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.empty-notifications img {
+  max-width: 100%;
+  height: auto;
+}
