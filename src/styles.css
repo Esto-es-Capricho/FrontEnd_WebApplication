@@ -8,5 +8,6 @@ html, body { height: 100%; }
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #F3F4F6;
+  background-image: linear-gradient(to right, #007FFF 0%, #89CFF0 100%);
+/* Asegura que el texto sea legible sobre el fondo */
 }

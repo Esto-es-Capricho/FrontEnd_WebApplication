@@ -4,6 +4,9 @@
   /* Añade un margen en la parte superior para evitar la colisión con otros componentes */
   margin-top: 20px;
 }
+h1 {
+  color: #f0f0f0;
+}
 
 .card-info{
   color: white;
@@ -40,7 +43,7 @@ mat-card {
 
 mat-card-actions {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin-top: auto;
 }
 

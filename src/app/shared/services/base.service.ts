@@ -51,6 +51,8 @@ export class BaseService<T> {
     return this.http.get<T>(`${this.resourcePath()}/${id}`, this.httpOptions).pipe(retry(2), catchError(this.handleError));
   }
 
+
+
   // Notifications
 
   getNotificationsByUserId(userId: number): Observable<Notification[]> {
@@ -68,5 +70,23 @@ export class BaseService<T> {
         catchError(this.handleError)
       );
   }
+
+  // Owe
+
+  getOwesByConsumerId(consumerId: number) {
+    return this.http.get<T[]>(`${this.resourcePath()}?consumer_id=${consumerId}`, this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
+
+  // Seller_Consumers
+
+  getSellersByConsumerId(consumerId: number) {
+    return this.http.get<T[]>(`${this.resourcePath()}?consumer_id=${consumerId}`, this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
+
+  // Selllers
+
+
 
 }

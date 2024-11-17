@@ -22,6 +22,10 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {FormsModule} from "@angular/forms";
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatInputModule} from "@angular/material/input";
+import { DebtCardComponent } from './debts/components/debt-card/debt-card.component';
+import { DebtsPersonsComponent } from './debts/pages/debts-persons/debts-persons.component';
+import { DebtPersonCardComponent } from './debts/components/debt-person-card/debt-person-card.component';
+
 
 
 
@@ -33,7 +37,11 @@ import {MatInputModule} from "@angular/material/input";
     NotificationCardComponent,
     ProfileConsumerComponent,
     ConsumerCardComponent,
-    ConsumerEditComponent
+    ConsumerEditComponent,
+    DebtCardComponent,
+    DebtsPersonsComponent,
+    DebtPersonCardComponent,
+
   ],
   imports: [
     HttpClientModule,

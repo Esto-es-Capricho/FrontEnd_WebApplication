@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
 import { BaseService } from "../../shared/services/base.service";
-import { Notification } from "../model/notification.entity";
+import { Seller } from "../model/seller.entity";
 import { HttpClient } from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
 })
-export class NotificationsService extends BaseService<Notification>{
+export class SellerService extends BaseService<Seller> {
 
   constructor(http: HttpClient) {
     super(http);
-    this.resourceEndpoint = '/notifications';
+    this.resourceEndpoint = '/sellers';
   }
 
+  // Additional methods specific to sellers can be added here
 }

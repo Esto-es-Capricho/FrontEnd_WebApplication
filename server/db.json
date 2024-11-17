@@ -24,8 +24,8 @@
     {
       "id": "1",
       "user_id": 2,
-      "name": "Maria",
-      "lastname": "Johnson",
+      "name": "Chgeeee",
+      "lastname": "ala",
       "image_profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRG1WxVcFjBUn9nB1zgLfr-tYL29QFd7F7tjlb38Uyg&s"
     }
   ],
@@ -41,6 +41,24 @@
       "user_id": 2,
       "title": "New Message",
       "message": "You have a new message from John."
+    }
+  ],
+  "owes": [
+    {
+      "id": "1",
+      "seller_id": 1,
+      "consumer_id": 1,
+      "amount": 150,
+      "description": "Invoice for services rendered",
+      "date": "2023-07-01",
+      "status": "Pending"
+    }
+  ],
+  "seller_consumers": [
+    {
+      "id": "1",
+      "seller_id": 1,
+      "consumer_id": 1
     }
   ]
 }

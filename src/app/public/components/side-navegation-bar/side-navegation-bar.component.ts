@@ -15,6 +15,7 @@ export class SideNavegationBarComponent {
   options = [
     { title: 'Home', path: '/consumer/home', icon: 'home' },
     { title: 'Profile', path: '/consumer/profile', icon: 'people' },
+    { title: 'Debts', path: '/consumer/persons', icon: 'money' },
 
   ]
 

@@ -1,5 +1,6 @@
 <mat-card class="mat-elevation-z8 consumer-card" *ngIf="consumer">
   <div class="card-header">
+    <h1>Perfíl</h1>
     <img mat-card-image [src]="consumer.image_profile" alt="Photo of {{consumer.name}}">
     <div *ngIf="editMode" class="edit-image">
       <mat-icon (click)="onEditImage()">edit</mat-icon>
