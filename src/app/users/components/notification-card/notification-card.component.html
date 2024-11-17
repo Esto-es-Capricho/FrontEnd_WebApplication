@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Notificaciones</h1>
+  <ng-container *ngIf="notifications.length; else noNotifications">
+    <mat-card class="notification-card" *ngFor="let notification of notifications">
+      <mat-card-header>
+        <mat-card-title>{{ notification.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ notification.message }}</p>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-mini-fab color="warn" (click)="deleteNotification(notification.id)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </ng-container>
+  <ng-template #noNotifications>
+    <div class="empty-notifications">
+      <img src="" alt="No hay notificaciones">
+    </div>
+  </ng-template>
+</div>

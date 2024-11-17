@@ -1,0 +1,24 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawerExpanded class="sidenav-expanded" mode="push" fixedInViewport>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let option of options">
+        <a mat-button [routerLink]="option.path" (click)="drawerExpanded.toggle()">
+          <mat-icon>{{ option.icon }}</mat-icon>
+          <span>{{ option.title }}</span>
+        </a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content (click)="drawerExpanded.toggle()">
+    <mat-toolbar color="primary">
+      <button (click)="drawerExpanded.toggle(); $event.stopPropagation()" aria-label="Toggle Sidenav" mat-icon-button type="button">
+        <mat-icon aria-label="Sidenav toggle icon">menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <button (click)="drawerExpanded.toggle(); $event.stopPropagation()" aria-label="Close Sidenav" mat-icon-button type="button">
+
+      </button>
+    </mat-toolbar>
+    <!-- Aquí puedes agregar el contenido principal de tu página -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
